@@ -1,4 +1,4 @@
-*{
+* {
     font-family: JetBrains Mono;
 }
 
@@ -26,67 +26,71 @@ body {
     fill: #d15dc7;
 }
 
-.paragrafo{
+.paragrafo {
     font-size: 1.2rem;
     text-align: left;
     padding-bottom: 3%;
     margin: 10% 5% 10% 5%;
     border-bottom: 1px solid rgb(71, 71, 71);
-    text-shadow: 1.5px 2px #b87aff ;
+    text-shadow: 1.5px 2px #b87aff;
 }
 
-.carousel{
+.carousel {
     border: 1px outset rgb(71, 71, 71);
     border-radius: 5px;
     padding: 2px;
     width: 80%;
 }
 
-.custom-box-shadow{
-    box-shadow: inset 14px 5px 34px 9px rgba(0,0,0,0.1);
+.custom-box-shadow {
+    box-shadow: inset 14px 5px 34px 9px rgba(0, 0, 0, 0.1);
 }
 
-.box-shadow{
-    box-shadow:  2px 4px rgba(0, 0, 0, 0.2);
+.box-shadow {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.margin{
+.margin {
     margin-top: 13%;
 }
 
-.float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
     box-shadow: 2px 2px 3px #999;
-    z-index:100;
-  }
-  
-  .my-float{
-    margin-top:15px;
-    margin-left:1px ;
-  }
-  
-  
-  /* Estilos para o ícone do botão em hover */
-  .whatsapp:hover i {
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 15px;
+    margin-left: 1px;
+}
+
+
+/* Estilos para o ícone do botão em hover */
+.whatsapp:hover i {
     margin-top: 16px;
-  }
-  
-  /* Estilos para o ícone do botão em dispositivos móveis */
-  @media (max-width: 767px) {
-    .whatsapp i {
-      margin-top: 16px;
+}
+
+/* Estilos para o ícone do botão em dispositivos móveis */
+
+@media (max-width: 767px) {
+    .float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
     }
-    
-    .whatsapp:hover i {
-      margin-top: 16px;
+
+    .my-float {
+        margin-top: 15px;
+        font-size: 20px;
     }
-  }
-  
+}
