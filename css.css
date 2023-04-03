@@ -55,24 +55,20 @@ body {
 }
 
 .float {
+    display: grid;
+    place-items: center;
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 40px;
     right: 40px;
     background-color: #25d366;
-    color: #FFF;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
-
-.my-float {
-    margin-top: 15px;
-    margin-left: 1px;
-}
-
 
 /* Estilos para o ícone do botão em hover */
 .whatsapp:hover i {
