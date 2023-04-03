@@ -51,7 +51,7 @@ body {
 }
 
 .margin {
-    margin-top: 13%;
+    margin-top: 12%;
 }
 
 .float {
@@ -71,8 +71,8 @@ body {
 }
 
 /* Estilos para o ícone do botão em hover */
-.whatsapp:hover i {
-    margin-top: 16px;
+.float:hover i {
+    margin-top: -2px;
 }
 
 /* Estilos para o ícone do botão em dispositivos móveis */
@@ -85,8 +85,40 @@ body {
         right: 20px;
     }
 
-    .my-float {
-        margin-top: 15px;
-        font-size: 20px;
-    }
+}
+
+
+
+
+
+.botaoTopo {
+
+    position: fixed;
+    width: 60px;
+    height: 40px;
+    bottom: 600px;
+    right: 150px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    padding-top: 0.7%;
+
+}
+
+.my-custom-arrow {
+    color: #fff;
+    /* define a cor da seta */
+    font-size: 1.3rem;
+    /* define o tamanho da seta */
+}
+
+.titulos {
+    font-size: 2.0rem;
+    text-align: left;
+    padding-bottom: 1%;
+    margin: 10% 5% 10% 5%;
+    border-bottom: 1px solid rgb(71, 71, 71);
+    text-shadow: 1.5px 2px #b87aff;
+    width: fit-content;
 }

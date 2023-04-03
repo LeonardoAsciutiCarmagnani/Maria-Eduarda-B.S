@@ -56,7 +56,7 @@
     <!--Carrossel-->
     <div class="carrosel d-flex justify-content-center align-items-center">
         <div id="carouselExampleControls"
-            class="carousel slide carousel-fade animate-slide-left shadow-lg p-1 mb-5 bg-body-tertiary rounded w-75"
+            class="carousel slide carousel-fade animate-slide-left bg-body-tertiary w-75 box-shadow"
             data-interval="3000" data-ride="carousel">
             <div class="carousel-inner" style="height: 100%;">
                 <div class="carousel-item active">
@@ -84,13 +84,25 @@
     </a>
 
     <!--Botao rolar para cima-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Topo</button>
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <button type="button" class="btn btn-primary botaoTopo" onclick="topFunction()" id="myBtn">
+                <i class="fas fa-arrow-up my-custom-arrow "></i>
+            </button>
+        </div>
+    </div>
+
+
+
+
 
 
     <!--Cards-->
 
+    <h2 class="titulos">Modelos</h2>
+
     <div class="container margin">
-        <div class="row justify-content-center my-5">
+        <div class="row justify-content-center my-2">
             <div class="col-md-4 mb-4 mb-md-0 mx-3" style="max-width: 300px;">
                 <!-- card 1 -->
                 <div class="card box-shadow" style="width: 18rem;">
@@ -122,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center my-5">
+        <div class="row justify-content-center my-2">
             <div class="col-md-4 mb-4 mb-md-0 mx-3 " style="max-width: 300px;">
                 <!-- card 4 -->
                 <div class="card box-shadow" style="width: 18rem;">
@@ -146,8 +158,11 @@
         </div>
     </div>
 
+
+    <!-- Localização -->
+    <h3 class="localizacao titulos">Localização</h3>
     <div class="mapa margin d-flex justify-content-center">
-        <iframe class="shadow-lg p-1 mb-5 bg-body-tertiary rounded w-75"
+        <iframe class="p-1 mb-5 bg-body-tertiary rounded w-75 box-shadow"
             src="https://www.google.com/maps/embed?pb=!4v1680473088863!6m8!1m7!1s0YKQA_a9NB_WZhBrxr7qcQ!2m2!1d-23.6298309784721!2d-46.52362174011024!3f310.8603270676692!4f1.7706766917293209!5f0.4000000000000002"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
