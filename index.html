@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maria Eduarda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -14,15 +14,28 @@
     <link href="css.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV+kFuX6xuPRvfk8W7IwhIzMX+90NQGyvVR0k/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
+        integrity="sha384-x3PyEkZLKcTt/vkF2PU4OhDfbMjySYRAtLhNhJ9S9m/xqoREynOj+Jwzmr4QoGvD" crossorigin="anonymous">
+    <!-- jQuery CDN do Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery CDN do Microsoft -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- jQuery CDN do Cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm sticky-top " style="background-color: #d15dc7">
+<body id="top">
+    <nav class="navbar navbar-expand-sm sticky-top styleNav">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img src="IMAGENS/logo_nova.png" width="80%">
+                <img src="IMAGENS/Logo.png" class="pointer backgroundRemover" width="70%" onclick="voltarAoTopo()">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,7 +45,7 @@
 
 
 
-    <div class="custom-shape-divider-top-1679597416">
+    <div class="custom-shape-divider-top-1679597416 tshadow">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
                 d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -47,16 +60,15 @@
     </div>
 
     <div class="paragrafo">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore veniam numquam! Minima, fugit
-            quidem. Quod ab rem qui libero repellendus. Eaque delectus quaerat placeat excepturi voluptatibus neque,
-            ullam odio!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut unde in distinctio nam odio delectus, eum
+            voluptate numquam, alias fuga ea consectetur impedit rerum. Temporibus sapiente eaque eos dolore illo!</p>
 
     </div>
 
     <!--Carrossel-->
     <div class="carrosel d-flex justify-content-center align-items-center">
         <div id="carouselExampleControls"
-            class="carousel slide carousel-fade animate-slide-left bg-body-tertiary w-75 box-shadow"
+            class="carousel slide carousel-fade animate-slide-left bg-body-tertiary w-50 box-shadow"
             data-interval="3000" data-ride="carousel">
             <div class="carousel-inner" style="height: 100%;">
                 <div class="carousel-item active">
@@ -79,18 +91,14 @@
     </div>
 
     <!--Botao whatsapp-->
-    <a href="https://wa.me/5511994128106" class="float" target="_blank">
+    <a href="https://wa.me/5511994128106" class="float " target="_blank">
         <i class="fab fa-whatsapp" style="font-size: 30px;"></i>
+    </a> 
+
+    <!-- Botao voltar ao topo -->
+    <a id="voltar-ao-topo" class="esconder btn btn-primary box-shadow" onclick="voltarAoTopo()">
+        <i class="fa fa-arrow-up"></i>
     </a>
-
-    <!--Botao rolar para cima-->
-    <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary botaoTopo" onclick="topFunction()" id="myBtn">
-            <i class="fas fa-arrow-up my-custom-arrow "></i>
-        </button>
-    </div>
-
-
 
 
 
@@ -101,7 +109,7 @@
     <h2 class="titulos">Modelos</h2>
 
     <div class="container margin">
-        <div class="row justify-content-center my-2">
+        <div class="row justify-content-center my-4">
             <div class="col-md-4 mb-4 mb-md-0 mx-3" style="max-width: 300px;">
                 <!-- card 1 -->
                 <div class="card box-shadow" style="width: 18rem;">
@@ -115,7 +123,7 @@
             <div class="col-md-4 mb-4 mb-md-0 mx-3 " style="max-width: 300px;">
                 <!-- card 2 -->
                 <div class="card box-shadow" style="width: 18rem;">
-                    <img src="IMAGENS/fio a fio.jpg" class="card-img-top" alt="...">
+                    <img src="IMAGENS/designer de sobrancelha.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -125,7 +133,7 @@
             <div class="col-md-4 mb-4 mb-md-0 mx-3 " style="max-width: 300px;">
                 <!-- card 3 -->
                 <div class="card box-shadow" style="width: 18rem;">
-                    <img src="IMAGENS/fio a fio.jpg" class="card-img-top" alt="...">
+                    <img src="IMAGENS/henna.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -133,11 +141,11 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center my-2">
+        <div class="row justify-content-center my-5">
             <div class="col-md-4 mb-4 mb-md-0 mx-3 " style="max-width: 300px;">
                 <!-- card 4 -->
                 <div class="card box-shadow" style="width: 18rem;">
-                    <img src="IMAGENS/fio a fio.jpg" class="card-img-top" alt="...">
+                    <img src="IMAGENS/volume brasileiro.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -147,7 +155,7 @@
             <div class="col-md-4 mb-4 mb-md-0 mx-3" style="max-width: 300px;">
                 <!-- card 5 -->
                 <div class="card box-shadow" style="width: 18rem;">
-                    <img src="IMAGENS/fio a fio.jpg" class="card-img-top" alt="...">
+                    <img src="IMAGENS/volume russo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -156,6 +164,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- Localização -->

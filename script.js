@@ -1,16 +1,15 @@
-// Quando o usuário rolar a página para baixo 20px do topo do documento, mostre o botão
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function() {scrollar()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
+function scrollar() {
+  if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+    document.getElementById("voltar-ao-topo").classList.remove("esconder");
+  } else {
+    document.getElementById("voltar-ao-topo").classList.add("esconder");
+  }
 }
 
-// Quando o usuário clicar no botão, role para o topo do documento
-function topFunction() {
+function voltarAoTopo() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+   }
+   
