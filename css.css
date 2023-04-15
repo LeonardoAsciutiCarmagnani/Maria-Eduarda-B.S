@@ -3,7 +3,7 @@
 }
 
 body {
-    
+
     background: rgb(150, 82, 194);
     background: linear-gradient(180deg, rgba(150, 82, 194, 1) 0%, rgba(137, 81, 188, 1) 24%, rgba(124, 81, 182, 1) 47%, rgba(111, 81, 176, 1) 71%, rgba(103, 80, 172, 1) 86%, rgba(95, 80, 169, 1) 100%);
 }
@@ -12,12 +12,24 @@ body {
     background-color: #D8BFD8;
 }
 
-.backgroundRemover{
+.backgroundRemover {
     mix-blend-mode: multiply;
+}
+
+.image {
+    width: 30%;
+
+    filter: drop-shadow(20px 20px 2.3px rgb(228, 171, 228));
+
+
 }
 
 .pointer {
     cursor: pointer;
+}
+
+.spaceTop {
+    margin-top: 10%;
 }
 
 .custom-shape-divider-top-1679597416 {
@@ -78,7 +90,7 @@ body {
     bottom: 40px;
     right: 40px;
     background-color: #25d366;
-    color: #fff;
+    color: #ffff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
@@ -117,8 +129,9 @@ body {
     padding-bottom: 1%;
     margin: 10% 5% 10% 5%;
     border-bottom: 1px solid rgb(71, 71, 71);
-    text-shadow: 1.5px 2px #D8BFD8;
+    text-shadow: 1.5px 2px rgb(71, 71, 71);
     width: fit-content;
+    color: #D8BFD8;
 }
 
 /* Estilos para o ícone do botão em hover */
