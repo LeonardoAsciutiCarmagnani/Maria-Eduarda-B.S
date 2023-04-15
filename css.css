@@ -19,9 +19,11 @@ body {
 .image {
     width: 30%;
 
-    filter: drop-shadow(10px 10px 1.5px rgb(228, 171, 228));
+    filter: drop-shadow(6px 6px 1.5px rgb(228, 171, 228));
+}
 
-
+.marginBotaoVoltar {
+    margin-top: 30%;
 }
 
 .pointer {
