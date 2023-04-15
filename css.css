@@ -19,7 +19,7 @@ body {
 .image {
     width: 30%;
 
-    filter: drop-shadow(20px 20px 2.3px rgb(228, 171, 228));
+    filter: drop-shadow(10px 10px 1.5px rgb(228, 171, 228));
 
 
 }
@@ -96,31 +96,6 @@ body {
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
-
-
-.btn-back-to-top {
-    position: fixed;
-    bottom: 570px;
-    right: 40px;
-    background-color: #007bff;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 24px;
-    z-index: 100;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 0.8%;
-    display: none;
-}
-
-.btn-back-to-top:hover {
-    background-color: #0066cc;
-    color: white;
-}
-
 
 
 .titulos {
