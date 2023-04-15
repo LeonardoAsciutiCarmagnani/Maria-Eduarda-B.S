@@ -6,8 +6,6 @@ function scrollar() {
     document.getElementById("voltar-ao-topo").classList.add("my-0.1");
   } else {
     document.getElementById("voltar-ao-topo").classList.add("esconder");
-    document.getElementById("voltar-ao-topo").classList.remove("my-0.1");
-
   }
 }
 
